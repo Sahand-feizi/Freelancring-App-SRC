@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Vazir';
+    font-weight: bold;
+    src: url('./fonts/Vazirmatn-Bold.woff2');
+}
+@font-face {
+    font-family: 'Vazir';
+    font-weight: 400;
+    src: url('./fonts/Vazirmatn-Black.woff2');
+}
+@font-face {
+    font-family: 'Vazir';
+    font-weight: 100;
+    src: url('./fonts/Vazirmatn-Regular.woff2');
+}

@@ -1,14 +1,19 @@
 import axios from 'axios'
 import './App.css'
 import DarkModeProvider from './context/DarkModeContext'
+import Auth from './pages/Auth'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
 
 function App() {
-  
-  axios.get('/user345353545')
 
   return (
-    <DarkModeProvider>
-    </DarkModeProvider>
+    <QueryClientProvider client={queryClient}>
+      <DarkModeProvider>
+        <Auth />
+      </DarkModeProvider>
+    </QueryClientProvider>
   )
 }
 

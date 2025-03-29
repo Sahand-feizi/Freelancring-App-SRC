@@ -4,14 +4,13 @@ import { useForm } from 'react-hook-form'
 import useGetOtp from './useGetOtp'
 import Loading from '../../ui/Loading'
 
-function SendOtpForm({ register, handleSubmit,  errors, reset, setStep }) {
+function SendOtpForm({ register, handleSubmit,  errors, setStep }) {
     
     const { isLoading, getOtp } = useGetOtp()
 
     const onSubmit = (data) => {
         getOtp(data, {
             onSuccess: () => {
-                reset()
                 setStep(2)
             }
         })
@@ -34,7 +33,7 @@ function SendOtpForm({ register, handleSubmit,  errors, reset, setStep }) {
                     isLoading ? (
                         <Loading width={80} height={80}/>
                     ) : (
-                        <button type='submit' className='btn btn--primary w-full'>تایید</button>
+                        <button type='submit' className='btn btn--primary w-full'>ارسال کد تایید</button>
                     )
                 }
             </div>

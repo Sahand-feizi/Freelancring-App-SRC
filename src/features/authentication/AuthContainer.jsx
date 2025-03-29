@@ -5,19 +5,18 @@ import { useForm } from 'react-hook-form'
 
 function AuthContainer() {
     const [step, setStep] = useState(1)
-    const { register, handleSubmit, formState: { errors }, reset } = useForm()
-
+    const { register, formState: { errors }, handleSubmit, getValues } = useForm()
+    
     if (step == 1) return (
         <SendOtpForm
             setStep={setStep}
             register={register}
             handleSubmit={handleSubmit}
             errors={errors}
-            reset={reset}
         />
     )
 
-    return <CheckOtpForm setStep={setStep} />
+    return <CheckOtpForm phoneNumber={getValues("phoneNumber")} />
 }
 
 export default AuthContainer

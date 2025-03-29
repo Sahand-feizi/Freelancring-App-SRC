@@ -7,3 +7,7 @@ export const getOtpApi = (data) => {
 export const checkOtpApi = (data) => {
     return http.post('/user/check-otp', data).then(({ data }) => data.data)
 }
+
+export const completeProfileApi = (data) => {
+    return http.post('/user/complete-profile', data).then(({ data }) => data.data)
+}

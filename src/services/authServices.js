@@ -11,3 +11,7 @@ export const checkOtpApi = (data) => {
 export const completeProfileApi = (data) => {
     return http.post('/user/complete-profile', data).then(({ data }) => data.data)
 }
+
+export const getUserProfileApi = () => {
+    return http.get('/user/profile').then(({ data }) => data.data)
+}

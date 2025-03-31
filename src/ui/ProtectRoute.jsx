@@ -10,8 +10,7 @@ function ProtectRoute({ children }) {
     
     useEffect(() => {
         if (!isAuthenticated && !isLoading) {
-            navigate('/complete-profile')
-            toast.error('شما در برنامه ثبت نام نکرده اید')
+            navigate('/not-access')
             return ''
         }
         if (!isVerified && !isLoading) {

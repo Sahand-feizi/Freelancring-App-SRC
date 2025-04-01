@@ -8,6 +8,7 @@ import ProtectRoute from './ui/ProtectRoute'
 import OwnerLayout from './features/owner/OwnerLayout'
 import OwnerDashboard from './pages/OwnerDashboard'
 import Projects from './pages/Projects'
+import { Toaster } from 'react-hot-toast'
 
 const queryClient = new QueryClient()
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <DarkModeProvider>
+        <Toaster />
         <Routes>
           <Route path='/auth' element={<Auth />} />
           <Route path='complete-profile' element={<CompleteProfile />} />

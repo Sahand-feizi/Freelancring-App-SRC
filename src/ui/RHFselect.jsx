@@ -12,7 +12,7 @@ function RHFselect({ register, validationSchema, required, errors, labelValue, n
             >
                 {
                     options?.map(({value, title}) => (
-                        <option className='font-thin text-secondary-800 bg-secondary-0' value={value}>{title}</option>
+                        <option className='font-thin text-secondary-800 bg-secondary-0' key={value} value={value}>{title}</option>
                     ))
                 }
             </select>

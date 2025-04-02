@@ -3,6 +3,7 @@ import Table from '../../ui/Table'
 import useOwnerProjects from './useOwnerProjects'
 import Loading from '../../ui/Loading'
 import ProjectTableRow from './ProjectTableRow'
+import Empty from '../../ui/Empty'
 
 function ProjectsTable() {
     const { projects, isLoading } = useOwnerProjects()
@@ -11,6 +12,8 @@ function ProjectsTable() {
         <div className='w-full flex justify-center'>
             <Loading width={80} height={80} />
         </div>
+
+    if(!projects) return <Empty resourceName='پروژه ای'/>
 
     return (
         <Table>

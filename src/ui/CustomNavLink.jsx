@@ -1,5 +1,4 @@
 import React from 'react'
-import { HiFolderMinus } from 'react-icons/hi2'
 import { NavLink } from 'react-router-dom'
 
 function CustomNavLink({children, to}) {

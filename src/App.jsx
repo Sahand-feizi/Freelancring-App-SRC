@@ -10,6 +10,10 @@ import OwnerDashboard from './pages/OwnerDashboard'
 import Projects from './pages/Projects'
 import { Toaster } from 'react-hot-toast'
 import Project from './pages/Project'
+import FreelancerLayout from './features/freelancer/FreelancerLayout'
+import FreelancerDashboard from './pages/FreelancerDashboard'
+import Proposals from './pages/Proposals'
+import SubmitedProjects from './pages/SubmitedProjects'
 
 const queryClient = new QueryClient()
 
@@ -30,6 +34,15 @@ function App() {
             <Route path='dashboard' element={<OwnerDashboard />} />
             <Route path='projects' element={<Projects />} />
             <Route path='projects/:id' element={<Project />} />
+          </Route>
+          <Route path='/freelancer' element={
+            <ProtectRoute>
+              <FreelancerLayout />
+            </ProtectRoute>} >
+            <Route index element={<Navigate to='dashboard'/>} />
+            <Route path='dashboard' element={<FreelancerDashboard />} />
+            <Route path='proposals' element={<Proposals />} />
+            <Route path='projects' element={<SubmitedProjects />} />
           </Route>
         </Routes>
       </DarkModeProvider>

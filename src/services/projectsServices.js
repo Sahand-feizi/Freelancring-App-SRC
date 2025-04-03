@@ -19,3 +19,7 @@ export const editProjectApi = ({ id, data }) => {
 export const getProjectApi = (id) => {
     return http.get(`/project/${id}`).then(({ data }) => data.data)
 }
+
+export const changeProjectStatusApi = ({ id, data }) => {
+    return http.patch(`/project/${id}`, data).then(({ data }) => data.data)
+}

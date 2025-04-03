@@ -11,17 +11,7 @@ import ConfirmDelete from '../../ui/ConfirmDelete';
 import useRemoveProject from './useRemoveProjects';
 import CreateAndEditProjectsForm from './CreateAndEditProjectsForm';
 import { NavLink, useNavigate } from 'react-router-dom';
-
-const statusStyle = {
-    OPEN: {
-        className: 'badge--success',
-        value: 'باز'
-    },
-    CLOSED: {
-        className: 'badge--error',
-        value: 'بسته'
-    }
-}
+import ToggleProjectStatus from './ToggleProjectStatus';
 
 function ProjectTableRow({ project, index }) {
     const [isDeleteOpen, setIsDeleteOpen] = useState(false)
@@ -50,9 +40,7 @@ function ProjectTableRow({ project, index }) {
                 </div>
             </td>
             <td>
-                <span className={`badge ${statusStyle[project.status].className}`}>
-                    {statusStyle[project.status].value}
-                </span>
+                <ToggleProjectStatus id={project._id} status={project.status}/>
             </td>
             <td>
                 <div className='flex gap-x-2'>

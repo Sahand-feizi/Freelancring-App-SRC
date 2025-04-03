@@ -9,7 +9,7 @@ function AppLayout({children}) {
             {children}
             <Header />
             <div className='bg-secondary-100'>
-                <div className='max-w-screen-lg pt-5 h-4 m-auto'>
+                <div className='max-w-screen-lg pt-5 h-4 m-auto px-5'>
                     <Outlet />
                 </div>
             </div>

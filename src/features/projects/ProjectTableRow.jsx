@@ -46,7 +46,7 @@ function ProjectTableRow({ project, index }) {
             </td>
             <td>
                 <div className="flex justify-center items-center">
-                    {project.freelancer || '-'}
+                    {project?.freelancer?.name || '-'}
                 </div>
             </td>
             <td>

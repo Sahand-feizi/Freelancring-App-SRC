@@ -14,5 +14,13 @@ export default function useCategories() {
         value: item._id
     }))
 
-    return { categories }
+    console.log(rowCategories);
+    
+
+    const transformedCategories = rowCategories.map(item => ({
+        title: item.title,
+        value: item.englishTitle
+    }))
+
+    return { categories, transformedCategories }
 }

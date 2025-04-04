@@ -14,6 +14,9 @@ import FreelancerLayout from './features/freelancer/FreelancerLayout'
 import FreelancerDashboard from './pages/FreelancerDashboard'
 import Proposals from './pages/Proposals'
 import SubmitedProjects from './pages/SubmitedProjects'
+import AdminLayout from './features/admin/AdminLayout'
+import AdminDashboard from './pages/AdminDashboard'
+import Users from './pages/Users'
 
 const queryClient = new QueryClient()
 
@@ -43,6 +46,17 @@ function App() {
             <Route path='dashboard' element={<FreelancerDashboard />} />
             <Route path='proposals' element={<Proposals />} />
             <Route path='projects' element={<SubmitedProjects />} />
+          </Route>
+          <Route path='/admin' element={
+            <ProtectRoute>
+              <AdminLayout />
+            </ProtectRoute>
+          } >
+            <Route index element={<Navigate to='dashboard'/>} />
+            <Route path='dashboard' element={<AdminDashboard />} />
+            <Route path='users' element={<Users />} />
+            <Route path='projects' element={<SubmitedProjects />} />
+            <Route path='proposals' element={<Proposals />} />
           </Route>
         </Routes>
       </DarkModeProvider>

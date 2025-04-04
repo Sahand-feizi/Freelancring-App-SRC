@@ -23,3 +23,7 @@ export const getProjectApi = (id) => {
 export const changeProjectStatusApi = ({ id, data }) => {
     return http.patch(`/project/${id}`, data).then(({ data }) => data.data)
 }
+
+export const getProjectsApi = () => {
+    return http.get('/project/list').then(({data}) => data.data)
+}

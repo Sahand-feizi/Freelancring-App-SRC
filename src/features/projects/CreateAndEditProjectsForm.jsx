@@ -7,6 +7,7 @@ import RHFselect from '../../ui/RHFselect'
 import DatePickerField from '../../ui/DatePickerField'
 import useCreateNewProject from './useCreateNewProject'
 import useEditProject from './useEditProject'
+import Loading from '../../ui/Loading'
 
 function CreateAndEditProjectsForm({ onClose, project = {} }) {
     const { _id: editId } = project;
@@ -131,8 +132,16 @@ function CreateAndEditProjectsForm({ onClose, project = {} }) {
             />
             <DatePickerField value={date} setValue={setDate} />
             <div className='flex items-center justify-between gap-x-2 pt-2'>
-                <button type='submit' className='btn btn--primary flex-1'>تایید</button>
-                <button onClick={onClose} className='btn btn--danger flex-1'>لغو</button>
+                {
+                    isCreating ? (
+                        <Loading width={80} height={80} />
+                    ) : (
+                        <>
+                            <button type='submit' className='btn btn--primary flex-1'>تایید</button>
+                            <button onClick={onClose} className='btn btn--danger flex-1'>لغو</button>
+                        </>
+                    )
+                }
             </div>
         </form>
     )

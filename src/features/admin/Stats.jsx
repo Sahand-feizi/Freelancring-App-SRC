@@ -11,9 +11,9 @@ function Stats() {
     const {isLoading: isLoading2, projects} = useProjects()
     const {isLoading: isLoading3, users} = useUsers()
 
-    const numOfUsers = users.length;
-    const numOfProjects = users.length;
-    const numOfProposals = proposals.length;
+    const numOfUsers = users?.length;
+    const numOfProjects = users?.length;
+    const numOfProposals = proposals?.length;
 
     if(isLoading1 || isLoading2 || isLoading3) return <Loading width={80} height={80}/>
 

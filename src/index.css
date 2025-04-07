@@ -79,6 +79,10 @@
     @apply text-secondary-800 w-full relative flex h-full py-3 pr-2 rounded-r-xl font-thin items-center gap-x-2 after:content-none after:shadow-[-20px_-20px_0_10px] after:shadow-secondary-100 hover:after:content-[''] after:w-[20px] after:duration-0 hover:bg-secondary-100 hover:text-primary-800 after:transition-all after:h-[20px] after:bg-transparent after:absolute after:-bottom-[20px] after:rounded-[50%] after:left-0 before:shadow-[-20px_20px_0_10px] before:content-none before:shadow-secondary-100 hover:before:content-[''] before:w-[20px] before:duration-0 before:transition-all before:h-[20px] before:bg-transparent before:absolute before:-top-[20px] before:rounded-[50%] before:left-0
   }
 
+  .headerNavLink {
+    @apply after:content-[''] text-sm font-medium text-secondary-600 transition-all duration-200 py-2 min-w-12 relative after:absolute after:bottom-0 after:rounded-full after:h-[.18rem] after:w-0 hover:after:w-full hover:after:duration-300 text-center after:left-0 after:bg-primary-900 rounded-full hover:text-primary-900
+  }
+
   .badge {
     @apply py-1 px-2 rounded-xl
   }

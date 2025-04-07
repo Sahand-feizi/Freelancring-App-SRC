@@ -17,6 +17,7 @@ import SubmitedProjects from './pages/SubmitedProjects'
 import AdminLayout from './features/admin/AdminLayout'
 import AdminDashboard from './pages/AdminDashboard'
 import Users from './pages/Users'
+import Home from './pages/Home'
 
 const queryClient = new QueryClient()
 
@@ -27,6 +28,7 @@ function App() {
       <DarkModeProvider>
         <Toaster />
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route path='/auth' element={<Auth />} />
           <Route path='complete-profile' element={<CompleteProfile />} />
           <Route path='/owner' element={

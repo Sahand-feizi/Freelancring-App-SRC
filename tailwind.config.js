@@ -16,8 +16,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'sm': '460px',
+      'md': '768px',
+      'lg': '1050px',
+      'xl': '1280px',
+      '2xl': '1536'
+    },
     extend: {
       colors: {
+        transparent: 'transparent',
         primary: {
           900: withOpacity('--color-primary-900'),
           800: withOpacity('--color-primary-800'),
@@ -49,17 +57,29 @@ export default {
       },
       container: {
         center: true,
-        padding: '1rem'
+        padding: '1rem',
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1050px',
+          xl: '1280px',
+          '2xl': '1536px'
+        }
       },
       fontFamily: {
-        sans: ['Vazir', fontFamily.sans]
+        sans: ['Vazir', fontFamily.sans],
+        yekan: ['Leaner', fontFamily.sans]
       }
     },
   },
   plugins: [
     tailwindFormPlugin({
       strategy: 'class'
-    })
+    }),
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+    }
   ],
 }
 

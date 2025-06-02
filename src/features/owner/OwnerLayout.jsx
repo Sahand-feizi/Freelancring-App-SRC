@@ -11,11 +11,11 @@ function OwnerLayout() {
             <Sidbar>
                 <CustomNavLink to='dashboard'>
                    <MdOutlineSpaceDashboard />
-                   <span>داشبورد</span>
+                   <span className='hidden md:flex'>داشبورد</span>
                 </CustomNavLink>
                 <CustomNavLink to='projects'>
                     <HiOutlineViewGrid />
-                    <span>پروژه ها</span>
+                    <span className='hidden md:flex'>پروژه ها</span>
                 </CustomNavLink>
             </Sidbar>
         </AppLayout>

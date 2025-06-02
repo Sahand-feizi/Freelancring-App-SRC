@@ -3,6 +3,7 @@ import AppLayout from '../../ui/AppLayout'
 import Sidbar from '../../ui/Sidbar'
 import CustomNavLink from '../../ui/CustomNavLink'
 import { HiCollection, HiHome } from 'react-icons/hi'
+import { AiFillProject } from "react-icons/ai";
 
 function FreelancerLayout() {
     return (
@@ -10,15 +11,15 @@ function FreelancerLayout() {
             <Sidbar>
                 <CustomNavLink to='dashboard'>
                     <HiHome />
-                    <span>داشبورد</span>
+                    <span className='hidden md:flex'>داشبورد</span>
                 </CustomNavLink>
                 <CustomNavLink to='projects'>
-                    <HiCollection />
-                    <span>پروژه ها</span>
+                    <AiFillProject />
+                    <span className='hidden md:flex'>پروژه ها</span>
                 </CustomNavLink>
                 <CustomNavLink to='proposals'>
                     <HiCollection />
-                    <span>درخواست ها</span>
+                    <span className='hidden md:flex'>درخواست ها</span>
                 </CustomNavLink>
             </Sidbar>
         </AppLayout>

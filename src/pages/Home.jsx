@@ -1,10 +1,14 @@
 import React from 'react'
 import HomePageHeader from '../ui/HomePageHeader'
+import HomePageLayout from '../ui/HomePageLayout'
+import Footer from '../ui/Footer'
 
 function Home() {
     return (
-        <div className='container'>
+        <div>
             <HomePageHeader />
+            <HomePageLayout />
+            <Footer />
         </div>
     )
 }

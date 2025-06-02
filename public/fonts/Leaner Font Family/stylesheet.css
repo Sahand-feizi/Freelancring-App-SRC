@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Leaner';
+    src: url('Leaner-ThinItalic.eot');
+    src: local('Leaner Thin Italic'), local('Leaner-ThinItalic'),
+        url('Leaner-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Leaner-ThinItalic.woff2') format('woff2'),
+        url('Leaner-ThinItalic.woff') format('woff'),
+        url('Leaner-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Leaner';
+    src: url('Leaner-Bold.eot');
+    src: local('Leaner Bold'), local('Leaner-Bold'),
+        url('Leaner-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Leaner-Bold.woff2') format('woff2'),
+        url('Leaner-Bold.woff') format('woff'),
+        url('Leaner-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leaner';
+    src: url('Leaner-Regular.eot');
+    src: local('Leaner'), local('Leaner-Regular'),
+        url('Leaner-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Leaner-Regular.woff2') format('woff2'),
+        url('Leaner-Regular.woff') format('woff'),
+        url('Leaner-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leaner';
+    src: url('Leaner-BoldItalic.eot');
+    src: local('Leaner Bold Italic'), local('Leaner-BoldItalic'),
+        url('Leaner-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Leaner-BoldItalic.woff2') format('woff2'),
+        url('Leaner-BoldItalic.woff') format('woff'),
+        url('Leaner-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Leaner';
+    src: url('Leaner-Thin.eot');
+    src: local('Leaner Thin'), local('Leaner-Thin'),
+        url('Leaner-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Leaner-Thin.woff2') format('woff2'),
+        url('Leaner-Thin.woff') format('woff'),
+        url('Leaner-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Leaner';
+    src: url('Leaner-RegularItalic.eot');
+    src: local('Leaner Italic'), local('Leaner-RegularItalic'),
+        url('Leaner-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Leaner-RegularItalic.woff2') format('woff2'),
+        url('Leaner-RegularItalic.woff') format('woff'),
+        url('Leaner-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

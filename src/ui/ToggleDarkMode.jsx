@@ -9,9 +9,9 @@ function ToggleDarkMode() {
         <button onClick={toggleDarkMode}>
             {
                 isDarkMode ? (
-                    <HiOutlineSun className='text-xl text-primary-900'/>
+                    <HiOutlineSun className='text-xl text-secondary-500 hover:text-primary-800'/>
                 ) : (
-                    <HiOutlineMoon className='text-xl text-primary-900'/>
+                    <HiOutlineMoon className='text-xl text-secondary-500 hover:text-primary-800'/>
                 )
             }
         </button>

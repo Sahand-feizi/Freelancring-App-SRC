@@ -75,12 +75,24 @@
     @apply bg-transparent border border-error text-error font-bold hover:bg-error hover:text-white transition-all duration-150
   }
 
+  .btn--white {
+    @apply bg-transparent border border-white text-white font-bold hover:bg-white hover:text-primary-900 transition-all duration-100
+  }
+
   .navLink {
-    @apply text-secondary-800 w-full relative flex h-full py-3 pr-2 rounded-r-xl font-thin items-center gap-x-2 after:content-none after:shadow-[-20px_-20px_0_10px] after:shadow-secondary-100 hover:after:content-[''] after:w-[20px] after:duration-0 hover:bg-secondary-100 hover:text-primary-800 after:transition-all after:h-[20px] after:bg-transparent after:absolute after:-bottom-[20px] after:rounded-[50%] after:left-0 before:shadow-[-20px_20px_0_10px] before:content-none before:shadow-secondary-100 hover:before:content-[''] before:w-[20px] before:duration-0 before:transition-all before:h-[20px] before:bg-transparent before:absolute before:-top-[20px] before:rounded-[50%] before:left-0
+    @apply text-secondary-800 w-full relative flex h-full py-3 pr-2 rounded-r-xl font-thin items-center gap-x-2 after:content-none after:shadow-[-20px_-20px_0_10px] after:shadow-secondary-100 hover:after:content-[''] after:w-[20px] after:duration-0 hover:bg-secondary-100 hover:text-primary-800 after:transition-all after:h-[20px] after:bg-transparent after:absolute after:-bottom-[20px] after:rounded-[50%] after:left-0 before:shadow-[-20px_20px_0_10px] before:content-none before:shadow-secondary-100 hover:before:content-[''] before:w-[20px] before:duration-0 before:transition-all before:h-[20px] before:bg-transparent before:absolute before:-top-[20px] before:rounded-[50%] before:left-0 text-3xl md:text-base
+  }
+
+  .footer-navlink{
+    @apply text-secondary-900 md:text-xl hover:text-primary-900 block font-thin text-base min-w-20
   }
 
   .headerNavLink {
-    @apply after:content-[''] text-sm font-medium text-secondary-600 transition-all duration-200 py-2 min-w-12 relative after:absolute after:bottom-0 after:rounded-full after:h-[.18rem] after:w-0 hover:after:w-full hover:after:duration-300 text-center after:left-0 after:bg-primary-900 rounded-full hover:text-primary-900
+    @apply md:after:content-[''] sm:bg-transparent hover:bg-secondary-200 w-full rounded-xl md:w-[5.2rem] text-sm font-medium text-secondary-600 transition-all duration-200 py-2 min-w-8 relative md:after:absolute md:after:bottom-0 md:after:rounded-full md:after:h-[.18rem] md:after:w-0 md:hover:after:w-full md:hover:after:duration-300 text-center md:after:left-0 md:after:bg-primary-900 md:rounded-full hover:text-primary-900 md:bg-transparent md:hover:bg-transparent
+  }
+
+  .contactUsBtn {
+    @apply h-12 w-12 rounded-full transition-all duration-200 border border-white text-white text-xl flex items-center justify-center hover:mb-5
   }
 
   .badge {
@@ -146,10 +158,11 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: clip;
   font-family: "Vazir";
   min-height: 100vh;
   user-select: none;
-  background-color: rgb(var(--background-app-rgb));
+  background-color: rgb(var(--color-secondary-100));
 }
 
 * {

@@ -13,3 +13,18 @@
     font-weight: 100;
     src: url('./fonts/Vazirmatn-Regular.woff2');
 }
+@font-face {
+    font-family: 'Leaner';
+    font-weight: 950;
+    src: url('./fonts/Leaner\ Font\ Family/Leaner-Bold.woff2');
+}
+@font-face {
+    font-family: 'Leaner';
+    font-weight: 500;
+    src: url('./fonts/Leaner\ Font\ Family/Leaner-Regular.woff2');
+}
+@font-face {
+    font-family: 'Leaner';
+    font-weight: 100;
+    src: url('./fonts/Leaner\ Font\ Family/Leaner-Thin.woff2');
+}

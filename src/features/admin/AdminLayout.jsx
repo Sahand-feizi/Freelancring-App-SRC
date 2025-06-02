@@ -10,19 +10,19 @@ function AdminLayout() {
             <Sidbar>
                 <CustomNavLink to='dashboard'>
                     <HiHome />
-                    <span>داشبورد</span>
+                    <span className='hidden md:flex'>داشبورد</span>
                 </CustomNavLink>
                 <CustomNavLink to='users'>
                     <HiUser />
-                    <span>کاربران</span>
+                    <span className='hidden md:flex'>کاربران</span>
                 </CustomNavLink>
                 <CustomNavLink to='projects'>
                     <HiOutlineViewGrid />
-                    <span>پروژه ها</span>
+                    <span className='hidden md:flex'>پروژه ها</span>
                 </CustomNavLink>
                 <CustomNavLink to='proposals'>
                     <HiCollection />
-                    <span>درخواست ها</span>
+                    <span className='hidden md:flex'>درخواست ها</span>
                 </CustomNavLink>
             </Sidbar>
         </AppLayout>

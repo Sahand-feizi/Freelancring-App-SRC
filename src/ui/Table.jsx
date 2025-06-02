@@ -2,9 +2,11 @@ import React from 'react'
 
 function Table({ children }) {
     return (
-        <table className='max-w-[calc(100%-2rem)] max-h-[calc(100vh-2rem)] overflow-x--auto'>
-            {children}
-        </table>
+        <div className='overflow-x-auto max-w-[calc(100vw-6rem)]'>
+            <table>
+                {children}
+            </table>
+        </div>
     )
 }
 
